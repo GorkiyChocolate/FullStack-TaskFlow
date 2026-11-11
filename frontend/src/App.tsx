@@ -5,9 +5,6 @@ import type { Task, TaskInput, TaskStatus } from './types'
 
 type Filter = 'all' | TaskStatus
 
-const statusLabel: Record<TaskStatus, string> = {
-  todo: 'To do', in_progress: 'In progress', done: 'Completed',
-}
 
 function App() {
   const [tasks, setTasks] = useState<Task[]>([])
